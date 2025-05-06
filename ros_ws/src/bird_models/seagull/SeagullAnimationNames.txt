@@ -1,0 +1,28 @@
+10-30 HoverForward
+35-55 HoverRight
+60-80 HoverLeft
+85-105 HoverDown
+110-130 HoverUp
+
+135-155 FlapForward
+160-180 FlapRight
+185-205 FlapLeft
+210-230 FlapDown
+235-255 FlapUp
+
+260-270 GlideForward
+275-285 GlideRight
+290-300 GlideLeft
+305-315 GlideDown
+320-330 GlideUp
+
+370-390 WalkForward
+395-415 TurnRight
+420-440 TurnLeft
+445-465 WalkBack
+
+470-490 Attack
+495-515 Hit
+520-550 Eat
+
+555-585 Soar

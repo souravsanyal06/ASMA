@@ -1,0 +1,5 @@
+<launch>
+  <param name="bird_CUERPO_description" command="$(find xacro)/xacro --inorder '$(find rotors_gazebo)/urdf/bird_CUERPO.urdf.xacro'" />
+
+  <node name="spawn_bird_CUERPO" pkg="gazebo_ros" type="spawn_model" args="-param bird_CUERPO_description -urdf -model bird_CUERPO" respawn="false" />
+</launch>

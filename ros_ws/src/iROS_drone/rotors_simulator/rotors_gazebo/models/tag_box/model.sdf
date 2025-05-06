@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="tag_box">
+    <include>
+      <uri>model://tag</uri>
+      <pose>-0.10 0 0 0 0 0</pose>
+    </include>  
+    <link name="box">
+      <pose>0 0 0 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size> 0.2 0.2 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size> 0.2 0.2 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <emissive>1 1 1 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <joint name="joint" type="fixed">
+      <pose>0 0 0 0 0 0 0</pose>
+      <parent>box</parent>
+      <child>tag::link</child>
+    </joint>
+    <plugin name="tag_box_plugin" filename="libtag_box_plugin.so">
+    
+    </plugin>
+  </model>
+</sdf>

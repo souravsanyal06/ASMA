@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<robot>
+
+<!--   <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>${namespace}</robotNamespace>
+      
+    </plugin>
+  </gazebo> -->
+
+  <!-- event camera -->
+  <gazebo reference="event_camera_link">
+    <sensor name="event_camera" type="camera">
+      <update_rate>20</update_rate>
+      <camera>
+	<pose> 0.15 0 0 0 0 0 </pose>
+        <horizontal_fov>1.047198</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <!-- <format>R8G8B8</format> -->
+        </image>
+        <clip>
+          <near>0.1</near>
+          <far>10</far>
+         </clip>
+      </camera>
+      <plugin name="event_controller" filename="libgazebo_dvs_plugin.so">
+        <!-- <baseline>0.2</baseline> -->
+        <alwaysOn>true</alwaysOn>
+        <updateRate>50</updateRate>
+        <cameraName>event_camera</cameraName>
+        <robotNamespace>${namespace}</robotNamespace>
+        <!-- <imageTopicName>/bebop2/event_camera/image_raw</imageTopicName> -->
+        <eventThreshold>50</eventThreshold>>
+        <!-- <cameraInfoTopicName>/bebop2/event_camera_test/camera_info</cameraInfoTopicName> -->
+        <eventsTopicName>/events</eventsTopicName>
+        <!-- <depthImageTopicName>/bebop2/depth_camera/depth/image_raw</depthImageTopicName>
+        <depthImageInfoTopicName>/bebop2/depth_camera/depth/camera_info</depthImageInfoTopicName>
+        <pointCloudTopicName>/bebop2/depth_camera/depth/points</pointCloudTopicName> -->
+        <frameName>base_link</frameName>
+        <!-- <pointCloudCutoff>0.5</pointCloudCutoff>
+        <pointCloudCutoffMax>3.0</pointCloudCutoffMax>
+        <distortionK1>0.00000001</distortionK1>
+        <distortionK2>0.00000001</distortionK2>
+        <distortionK3>0.00000001</distortionK3>
+        <distortionT1>0.00000001</distortionT1>
+        <distortionT2>0.00000001</distortionT2>
+        <CxPrime>0</CxPrime>
+        <Cx>0</Cx>
+        <Cy>0</Cy>
+        <focalLength>0</focalLength>
+        <hackBaseline>0</hackBaseline> -->
+      </plugin>
+    </sensor>
+  </gazebo>
+
+</robot>

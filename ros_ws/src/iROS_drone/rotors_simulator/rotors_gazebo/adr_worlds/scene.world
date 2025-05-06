@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <!-- Add plugins if needed -->
+    <plugin name="ros_interface_plugin" filename="librotors_gazebo_ros_interface_plugin.so"></plugin>
+
+    <!-- Include ground plane and other models -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+  <physics type="ode">
+    <gravity>0 0 -9.8</gravity>
+    <max_step_size>0.001</max_step_size>
+    <real_time_factor>1</real_time_factor>
+    <real_time_update_rate>1000</real_time_update_rate>
+  </physics>
+
+    <!-- Define the bird actor -->
+    <actor name="bird">
+    <plugin name="actor_collisions_plugin" filename="/home/sourav/cv_ws/src/object_avoid/DeepPilot_network/actor_collisions/build/libActorCollisionsPlugin.so">
+    </plugin>
+      <pose>-2 0 10.0 0 0 0</pose> 
+          <skin>
+            <filename>/home/sourav/safe_ai/cv_ws/src/bird_models/hummingbird/hummingbird1.dae</filename>
+            <scale>0.1</scale>
+          </skin>
+       <script>
+        <trajectory id="0" type="animation">
+          
+            <waypoint>
+              <time>0</time>
+              <pose>-20 0 15.0 0 1.57 0</pose>
+            </waypoint>
+          
+            <waypoint>
+              <time>10</time>
+              <pose>-20 0 15.0 0 1.57 0</pose>
+            </waypoint>
+          
+        </trajectory>
+      </script>
+    </actor>
+  </world>
+</sdf>

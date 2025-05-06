@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+
+<world name="bird_world">
+  <include>
+    <uri>model://ground_plane</uri> <!-- Include ground plane model -->
+  </include>
+  
+  <!-- Insert your bird model SDF here -->
+  <model name="flying_bird">
+    <static>false</static>
+    
+    <!-- Define bird link -->
+    <link name="body">
+      <pose>0 0 1 0 0 0</pose>
+      <inertial>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <iyy>0.01</iyy>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <sphere>
+            <radius>0.1</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.1 0.1 0.1 1</ambient>
+          <diffuse>0.7 0.7 0.7 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+    <!-- Define bird joint -->
+    <joint name="fly_joint" type="revolute">
+      <parent>world</parent>
+      <child>body</child>
+      <pose>0 0 1 0 0 0</pose>
+      <axis>
+        <xyz>1 0 0</xyz>
+      </axis>
+      <limit>
+        <lower>-1.57</lower> <!-- Lower angle limit -->
+        <upper>1.57</upper>  <!-- Upper angle limit -->
+        <effort>100</effort>
+        <velocity>1</velocity>
+      </limit>
+      <dynamics>
+        <damping>0.1</damping>
+        <friction>0.5</friction>
+      </dynamics>
+    </joint>
+    
+    <!-- Add lift plugin -->
+    <plugin name="lift_plugin" filename="libLiftPlugin.so"/>
+  </model>
+  
+  <!-- Add gravity -->
+  <physics type="ode">
+    <gravity>0 0 -9.8</gravity>
+    <max_step_size>0.001</max_step_size>
+    <real_time_factor>1</real_time_factor>
+    <real_time_update_rate>1000</real_time_update_rate>
+  </physics>
+</world>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<robot>
+
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>${namespace}</robotNamespace>
+      <!-- <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType> -->
+    </plugin>
+  </gazebo>
+
+  <!-- depth camera -->
+  <gazebo reference="camera_link">
+    <sensor name="depth_camera" type="depth">
+      <update_rate>30</update_rate>
+      <camera>
+	<pose> 0.1 0 0 0 0 0</pose>
+        <horizontal_fov>1.047198</horizontal_fov>
+        <image>
+          <width>856</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.05</near>  
+          <far>100</far>      
+        </clip>
+      </camera>
+      <plugin name="depth_controller" filename="libgazebo_ros_openni_kinect.so">
+        <baseline>0.2</baseline>
+        <alwaysOn>true</alwaysOn>
+        <updateRate>1.0</updateRate>
+        <cameraName>depth_camera</cameraName>
+        <imageTopicName>/bebop2/depth_camera/color/image_raw</imageTopicName>
+        <cameraInfoTopicName>/bebop2/depth_camera/color/camera_info</cameraInfoTopicName>
+        <depthImageTopicName>/bebop2/depth_camera/depth/image_raw</depthImageTopicName>
+        <depthImageInfoTopicName>/bebop2/depth_camera/depth/camera_info</depthImageInfoTopicName>
+        <pointCloudTopicName>/bebop2/depth_camera/depth/points</pointCloudTopicName>
+        <frameName>base_link</frameName>
+        <pointCloudCutoff>0.6</pointCloudCutoff>
+        <pointCloudCutoffMax>100.0</pointCloudCutoffMax>    <!--distance between drone and ring in meters -->
+        <distortionK1>0.00000001</distortionK1>
+        <distortionK2>0.00000001</distortionK2>
+        <distortionK3>0.00000001</distortionK3>
+        <distortionT1>0.00000001</distortionT1>
+        <distortionT2>0.00000001</distortionT2>
+        <CxPrime>0</CxPrime>
+        <Cx>0</Cx>
+        <Cy>0</Cy>
+        <focalLength>0</focalLength>
+        <hackBaseline>0</hackBaseline>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+</robot>

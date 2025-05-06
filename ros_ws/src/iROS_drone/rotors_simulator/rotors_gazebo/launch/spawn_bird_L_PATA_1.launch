@@ -1,0 +1,5 @@
+<launch>
+  <param name="bird_L_PATA_1_description" command="$(find xacro)/xacro --inorder '$(find rotors_gazebo)/urdf/bird_L_PATA_1.urdf.xacro'" />
+
+  <node name="spawn_bird_L_PATA_1" pkg="gazebo_ros" type="spawn_model" args="-param bird_L_PATA_1_description -urdf -model bird_L_PATA_1" respawn="false" />
+</launch>
