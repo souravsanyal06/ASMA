@@ -66,7 +66,7 @@ ASMA is a modular framework for instruction-following drone navigation that inte
     ```bash
     bash launch.sh
     ```
-4. **Press T in the keyboard window to start the drone, Press Q or E to rotate the drone so that it faces the pedestrians**
+4. **Press T in the keyboard window to start the drone, Press Q or E to rotate the drone so that it faces the pedestrians.**
 
 5. **Run the ASMA demo in the city world:**
 
