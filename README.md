@@ -28,11 +28,20 @@ Download the following files from Google Drive and extract them into the root AS
 - pretrained.zip: https://drive.google.com/file/d/1gHSTfwxWUhXHuuLAlRK94-qcY9jB_P58/view?usp=drive_link
 - videos.zip: https://drive.google.com/file/d/1VBoGVONh2tylEz2IwCaIYHMSyFjxDfDZ/view?usp=drive_link
 
-After extracting, the directory should look like:
+After extracting, your project directory should look like:
+
+```
 ASMA/
 ├── dataset/
 ├── pretrained/
-└── videos/
+├── videos/
+├── ros_ws/
+├── scripts/
+├── build.sh
+├── README.md
+└── other utility files...
+```
+
 
 ## 🧾 Citation
 
