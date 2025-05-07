@@ -7,17 +7,28 @@ ASMA is a modular framework for instruction-following drone navigation that inte
 
 ## 🎥 Demo Visualizations
 
-**Instruction 1:**
-![Instruction 1](media/cmd1.gif)
-
-**Instruction 2:**
-![Instruction 2](media/cmd2.gif)
-
-**Instruction 3:**
-![Instruction 3](media/cmd3.gif)
-
-**Instruction 4:**
-![Instruction 4](media/cmd4.gif)
+<table>
+  <tr>
+    <td align="center"><b>Instruction 1</b><br>
+    <em>Go past the first traffic light and go straight past the blue car. After crossing a blue mailbox, turn right at the stop sign, and land in front of the gas station.</em><br>
+    <img src="media/cmd1.gif" width="250px">
+    </td>
+    <td align="center"><b>Instruction 2</b><br>
+    <em>Follow the road. After the crossing, fly through the alley before the blue mailbox. Turn left, pass between buildings, turn left at the oak tree, and if a white truck is visible, land in front of it.</em><br>
+    <img src="media/cmd2.gif" width="250px">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Instruction 3</b><br>
+    <em>Head past the second traffic light. If an ambulance is on the left, fly past it and the stop sign. Enter the gazebo and land inside.</em><br>
+    <img src="media/cmd3.gif" width="250px">
+    </td>
+    <td align="center"><b>Instruction 4</b><br>
+    <em>Fly past the first traffic light, then turn right before the gas station. Before the white truck, turn left. At the apartment with stairs, ascend to the third floor and land inside the hallway.</em><br>
+    <img src="media/cmd4.gif" width="250px">
+    </td>
+  </tr>
+</table>
 
 
 ## 🛠️ Setup Instructions
