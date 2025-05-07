@@ -18,7 +18,7 @@ bash build.sh
 cd ../scripts
 python3 asma_city.py
 
-You will be prompted to enter an instruction number corresponding to a predefined natural language command (e.g., 1 for “Go to the house on the left”).
+You will be prompted to enter an instruction number corresponding to a predefined natural language command (e.g., 1 , 2, 3, 4).
 
 ## 📁 Download Required Data
 
