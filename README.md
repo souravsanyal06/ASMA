@@ -49,19 +49,28 @@ ASMA is a modular framework for instruction-following drone navigation that inte
 
 ## 🛠️ Setup Instructions
 
-1. Clone the repository:
-git clone https://github.com/souravsanyal06/ASMA.git
-cd ASMA
+1. **Clone the repository:**
 
-2. Build the ROS workspace:
-cd ros_ws
-bash build.sh
+    ```bash
+    git clone https://github.com/souravsanyal06/ASMA.git
+    cd ASMA
+    ```
 
-3. Run the ASMA demo:
-cd ../scripts
-python3 asma_city.py
+2. **Build the ROS workspace:**
 
-You will be prompted to enter an instruction number corresponding to a predefined natural language command (e.g., 1 , 2, 3, 4).
+    ```bash
+    cd ros_ws
+    bash build.sh
+    ```
+
+3. **Run the ASMA demo:**
+
+    ```bash
+    cd ../scripts
+    python3 asma_city.py
+    ```
+
+    You will be prompted to enter an instruction number corresponding to a predefined natural language command (e.g., 1, 2, 3, 4).
 
 ## 📁 Download Required Data
 
