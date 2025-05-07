@@ -62,8 +62,13 @@ ASMA is a modular framework for instruction-following drone navigation that inte
     cd ros_ws
     bash build.sh
     ```
+3. **Launch the simulation environment:**
+    ```bash
+    bash launch.sh
+    ```
+4. *** Press T in the keyboard window to start the drone, Press Q or E to rotate the drone so that it faces the pedestrians***
 
-3. **Run the ASMA demo:**
+5. **Run the ASMA demo in the city world:**
 
     ```bash
     cd ../scripts
