@@ -104,7 +104,6 @@ After extracting, your project directory should look like:
 ASMA/
 ├── dataset/
 ├── pretrained/
-├── videos/
 ├── ros_ws/
 ├── scripts/
 ├── build.sh
