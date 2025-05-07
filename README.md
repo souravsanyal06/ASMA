@@ -38,13 +38,15 @@ ASMA/
 
 If you use this repository in your work, please cite:
 
+```bibtex
 @misc{sanyal2025asmaadaptivesafetymargin,
-      title={ASMA: An Adaptive Safety Margin Algorithm for Vision-Language Drone Navigation via Scene-Aware Control Barrier Functions}, 
-      author={Sourav Sanyal and Kaushik Roy},
-      year={2025},
-      eprint={2409.10283},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2409.10283}, 
+  title={ASMA: An Adaptive Safety Margin Algorithm for Vision-Language Drone Navigation via Scene-Aware Control Barrier Functions}, 
+  author={Sourav Sanyal and Kaushik Roy},
+  year={2025},
+  eprint={2409.10283},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/2409.10283}
 }
+```
 
