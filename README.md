@@ -4,6 +4,22 @@
 
 ASMA is a modular framework for instruction-following drone navigation that integrates vision-language perception with real-time safety through scene-aware control barrier functions (CBFs). It enables collision-aware navigation guided by natural language prompts in complex environments.
 
+
+## 🎥 Demo Visualizations
+
+**Instruction 1:**
+![Instruction 1](media/cmd1.gif)
+
+**Instruction 2:**
+![Instruction 2](media/cmd2.gif)
+
+**Instruction 3:**
+![Instruction 3](media/cmd3.gif)
+
+**Instruction 4:**
+![Instruction 4](media/cmd4.gif)
+
+
 ## 🛠️ Setup Instructions
 
 1. Clone the repository:
