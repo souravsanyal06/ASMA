@@ -9,23 +9,39 @@ ASMA is a modular framework for instruction-following drone navigation that inte
 
 <table>
   <tr>
-    <td align="center"><b>Instruction 1</b><br>
-    <em>Go past the first traffic light and go straight past the blue car. After crossing a blue mailbox, turn right at the stop sign, and land in front of the gas station.</em><br>
-    <img src="media/cmd1.gif" width="250px">
+    <td align="center" width="50%">
+      <b>Instruction 1</b><br>
+      <div align="justify">
+        <em>Go past the first traffic light and go straight past the blue car. After crossing a blue mailbox, turn right at the stop sign, and land in front of the gas station.</em>
+      </div>
+      <br>
+      <img src="media/cmd1.gif" width="320px">
     </td>
-    <td align="center"><b>Instruction 2</b><br>
-    <em>Follow the road. After the crossing, fly through the alley before the blue mailbox. Turn left, pass between buildings, turn left at the oak tree, and if a white truck is visible, land in front of it.</em><br>
-    <img src="media/cmd2.gif" width="250px">
+    <td align="center" width="50%">
+      <b>Instruction 2</b><br>
+      <div align="justify">
+        <em>Follow the road. After the crossing, fly through the alley before the blue mailbox. Turn left, pass between buildings, turn left at the oak tree, and if a white truck is visible, land in front of it.</em>
+      </div>
+      <br>
+      <img src="media/cmd2.gif" width="320px">
     </td>
   </tr>
   <tr>
-    <td align="center"><b>Instruction 3</b><br>
-    <em>Head past the second traffic light. If an ambulance is on the left, fly past it and the stop sign. Enter the gazebo and land inside.</em><br>
-    <img src="media/cmd3.gif" width="250px">
+    <td align="center" width="50%">
+      <b>Instruction 3</b><br>
+      <div align="justify">
+        <em>Head past the second traffic light. If an ambulance is on the left, fly past it and the stop sign. Enter the gazebo and land inside.</em>
+      </div>
+      <br>
+      <img src="media/cmd3.gif" width="320px">
     </td>
-    <td align="center"><b>Instruction 4</b><br>
-    <em>Fly past the first traffic light, then turn right before the gas station. Before the white truck, turn left. At the apartment with stairs, ascend to the third floor and land inside the hallway.</em><br>
-    <img src="media/cmd4.gif" width="250px">
+    <td align="center" width="50%">
+      <b>Instruction 4</b><br>
+      <div align="justify">
+        <em>Fly past the first traffic light, then turn right before the gas station. Before the white truck, turn left. At the apartment with stairs, ascend to the third floor and land inside the hallway.</em>
+      </div>
+      <br>
+      <img src="media/cmd4.gif" width="320px">
     </td>
   </tr>
 </table>
