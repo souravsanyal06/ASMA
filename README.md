@@ -85,7 +85,7 @@ ASMA is a modular framework for instruction-following drone navigation that inte
 5. **Run the ASMA demo in the city world:**
 
     ```bash
-    cd ../scripts
+    cd scripts
     python3 asma_city.py
     ```
 
