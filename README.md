@@ -54,15 +54,27 @@ ASMA is a modular framework for instruction-following drone navigation that inte
     ```bash
     git clone https://github.com/souravsanyal06/ASMA.git
     cd ASMA
+ 
     ```
+2. **Make sure ROS is installed and source the files:**
 
-2. **Build the ROS workspace:**
+   ```bash
+   source /opt/ros/noetic/setup.bash
+   ```
+
+3. **Build the ROS workspace:**
 
     ```bash
     cd ros_ws
     bash build.sh
     ```
-3. **Launch the simulation environment:**
+    While building, you may have to install packages, for example
+    ```bash
+    pip install future
+    ```
+
+    
+4. **Launch the simulation environment:**
     ```bash
     bash launch.sh
     ```
@@ -80,9 +92,9 @@ ASMA is a modular framework for instruction-following drone navigation that inte
 
 
 
-4. **Press T in the keyboard window to start the drone, Press Q or E to rotate the drone so that it faces the pedestrians.**
+5. **Press T in the keyboard window to start the drone, Press Q or E to rotate the drone so that it faces the pedestrians.**
 
-5. **Run the ASMA demo in the city world:**
+6. **Run the ASMA demo in the city world:**
 
     ```bash
     cd scripts
